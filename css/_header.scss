@@ -1,0 +1,33 @@
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(222, 222, 222);
+    box-shadow: 0 0 8px rgb(222, 222, 222);
+    .btn {
+        padding: 0.75rem;
+        background-color: #fff;
+        border: none;
+    }
+}
+
+nav {
+    flex: 0 0 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height ease-in-out 1s;
+    &.show {
+        max-height: 275px;
+    }
+}
+
+.menu-links li {
+    line-height: 3.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.menu-links a {
+    display: block;
+    padding-left: 0.75rem;
+}

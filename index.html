@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Magazine</title>
-    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
     <header>
-        <h1>Magazine</h1>
-        <button aria-expanded="false" aria-controls="nav">
+        <h1><a href="index.html">Magazine</a></h1>
+        <button class="btn" aria-expanded="false" aria-controls="nav">
             <svg viewBox="0 0 100 80" width="40" height="40">
                 <title>Navigation Menu Icon</title>
                 <rect width="100" height="20"></rect>
@@ -18,7 +18,7 @@
                 <rect y="60" width="100" height="20"></rect>
               </svg>
         </button>
-        <nav id="nav">
+        <nav class="top-nav" id="nav">
             <ul class="menu-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#">Popular</a></li>
@@ -63,28 +63,38 @@
                 <h2>Popular Posts</h2>
                 <article>
                     <img src="img/vrkasana-yoga.jpg" alt="Person doing yoga on a rooftop">
-                    <h3>Benefits of Yoga</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum eaque nihil vitae libero officiis minus tempora blanditiis officia saepe voluptatibus. Minus non voluptas et repellendus, unde quis a dolore pariatur?</p>
+                    <div>
+                        <h3>Benefits of Yoga</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum eaque nihil vitae libero officiis minus tempora blanditiis officia saepe voluptatibus. Minus non voluptas et repellendus, unde quis a dolore pariatur?</p>
+                    </div>
                 </article>
                 <article>
                     <img src="img/abstract.jpg" alt="Pink and orange abstract colours">
-                    <h3>Meditation for the Mind</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptas placeat voluptatem nisi, unde cupiditate qui voluptatibus deserunt consequatur est? Voluptas fugiat vero modi sunt hic dolorum. Consequatur, aut maxime.</p>
+                    <div>
+                        <h3>Meditation for the Mind</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptas placeat voluptatem nisi, unde cupiditate qui voluptatibus deserunt consequatur est? Voluptas fugiat vero modi sunt hic dolorum. Consequatur, aut maxime.</p>
+                    </div>
                 </article>
                 <article>
                     <img src="img/beach-at-sunrise.jpg" alt="Beach view">
-                    <h3>Location, Location, Location</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore impedit itaque repellat nobis perferendis sapiente quaerat, eos optio nesciunt sit sed suscipit excepturi placeat aspernatur. Ipsa dignissimos provident assumenda laborum?</p>
+                    <div>
+                        <h3>Location, Location, Location</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore impedit itaque repellat nobis perferendis sapiente quaerat, eos optio nesciunt sit sed suscipit excepturi placeat aspernatur. Ipsa dignissimos provident assumenda laborum?</p>
+                    </div>
                 </article>
                 <article>
                     <img src="img/cat-photo.jpg" alt="A cat face">
-                    <h3>Family Pets</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta vero debitis neque impedit nulla minima vitae quia laudantium molestias at odit modi, ex laboriosam similique eum deserunt saepe pariatur accusamus?</p>
+                    <div>
+                        <h3>Family Pets</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta vero debitis neque impedit nulla minima vitae quia laudantium molestias at odit modi, ex laboriosam similique eum deserunt saepe pariatur accusamus?</p>
+                    </div>
                 </article>
                 <article>
                     <img src="img/beach-wind.jpg" alt="Person at the beach on a windy day">
-                    <h3>Taking Breaks</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolorum hic vitae dolore accusamus maxime mollitia exercitationem non laudantium assumenda magni, perspiciatis excepturi blanditiis quis nostrum doloribus aspernatur nobis rerum?</p>
+                    <div>
+                        <h3>Taking Breaks</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolorum hic vitae dolore accusamus maxime mollitia exercitationem non laudantium assumenda magni, perspiciatis excepturi blanditiis quis nostrum doloribus aspernatur nobis rerum?</p>
+                    </div>
                 </article>
             </section>
         </div>
@@ -96,7 +106,7 @@
         </div>
         <div class="col">
             <h2>Navigation</h2>
-            <ul>
+            <ul class="site-map">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#">Popular</a></li>
                 <li><a href="#">About</a></li>
@@ -105,7 +115,7 @@
         </div>
         <div class="col">
             <h2>Categories</h2>
-            <ul>
+            <ul class="categories">
                 <li><a href="#">Meals</a></li>
                 <li><a href="#">Exercises</a></li>
                 <li><a href="#">Mind</a></li>
