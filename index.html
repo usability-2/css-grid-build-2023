@@ -9,23 +9,26 @@
 </head>
 <body>
     <header>
-        <h1><a href="index.html">Magazine</a></h1>
-        <button class="btn" aria-expanded="false" aria-controls="nav">
-            <svg viewBox="0 0 100 80" width="40" height="40">
-                <title>Navigation Menu Icon</title>
-                <rect width="100" height="20"></rect>
-                <rect y="30" width="100" height="20"></rect>
-                <rect y="60" width="100" height="20"></rect>
-              </svg>
-        </button>
-        <nav class="top-nav" id="nav">
-            <ul class="menu-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Popular</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="inner-container">
+            <h1><a href="index.html">Magazine</a></h1>
+            <button class="btn" aria-expanded="false" aria-controls="nav">
+                <svg viewBox="0 0 100 80" width="40" height="40">
+                    <title>Navigation Menu Icon</title>
+                    <rect width="100" height="20"></rect>
+                    <rect y="30" width="100" height="20"></rect>
+                    <rect y="60" width="100" height="20"></rect>
+                  </svg>
+            </button>
+            <nav class="top-nav" id="nav">
+                <ul class="menu-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Popular</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
     </header>
 
     <main>
@@ -62,7 +65,10 @@
             <section class="popular-posts">
                 <h2>Popular Posts</h2>
                 <article>
-                    <img src="img/vrkasana-yoga.jpg" alt="Person doing yoga on a rooftop">
+                    <picture>
+                        <source srcset="img/vrkasana-yoga-port.jpg" media="(min-width: 1500px)">
+                        <img src="img/vrkasana-yoga.jpg" alt="Person doing yoga on a rooftop">
+                    </picture>
                     <div>
                         <h3>Benefits of Yoga</h3>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum eaque nihil vitae libero officiis minus tempora blanditiis officia saepe voluptatibus. Minus non voluptas et repellendus, unde quis a dolore pariatur?</p>
@@ -101,32 +107,34 @@
     </main>
 
     <footer>
-        <div class="col">
-            <h2>Magazine</h2>
-        </div>
-        <div class="col">
-            <h2>Navigation</h2>
-            <ul class="site-map">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Popular</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-        <div class="col">
-            <h2>Categories</h2>
-            <ul class="categories">
-                <li><a href="#">Meals</a></li>
-                <li><a href="#">Exercises</a></li>
-                <li><a href="#">Mind</a></li>
-            </ul>
-        </div>
-        <div class="col">
-            <h2>Newsletter</h2>
-            <form action="#" method="post">
-                <label for="email">Email</label>
-                <input id="email" type="email">
-            </form>
+        <div class="inner-container">
+            <div class="col">
+                <h2>Magazine</h2>
+            </div>
+            <div class="col">
+                <h2>Navigation</h2>
+                <ul class="site-map">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Popular</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h2>Categories</h2>
+                <ul class="categories">
+                    <li><a href="#">Meals</a></li>
+                    <li><a href="#">Exercises</a></li>
+                    <li><a href="#">Mind</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h2>Newsletter</h2>
+                <form action="#" method="post">
+                    <label for="email">Email</label>
+                    <input id="email" type="email">
+                </form>
+            </div>
         </div>
     </footer>
 </body>

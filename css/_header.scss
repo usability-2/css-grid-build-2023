@@ -1,14 +1,18 @@
+@use 'sizing' as *;
+
 header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
     border-bottom: 1px solid rgb(222, 222, 222);
     box-shadow: 0 0 8px rgb(222, 222, 222);
     .btn {
         padding: 0.75rem;
         background-color: #fff;
         border: none;
+    }
+    .inner-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 
@@ -30,4 +34,25 @@ nav {
 .menu-links a {
     display: block;
     padding-left: 0.75rem;
+}
+
+@media screen and (min-width: $exsmall) {
+    .btn {
+        display: none;
+    }
+
+    nav {
+        max-height: unset;
+        flex: 0 1 auto;
+        .menu-links {
+            display: flex;
+            gap: 1rem;
+            a {
+                padding-right: 0.75rem;
+            }
+            li {
+                margin-bottom: 0;
+            }
+        }
+    }
 }

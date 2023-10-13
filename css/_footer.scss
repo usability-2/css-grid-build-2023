@@ -1,11 +1,13 @@
-@use 'sizing';
+@use 'sizing' as *;
 
 footer {
-    display: flex;
-    flex-wrap: wrap;
-    gap: sizing.$baseline;
     border-top: 1px solid rgb(222, 222, 222);
-    justify-content: space-between;
+    .inner-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: $baseline;
+        justify-content: space-between;
+    }
     .col {
         flex: 1;
     }
@@ -19,4 +21,12 @@ footer {
         width: 100%;
     }
 
+}
+
+@media screen and (min-width: $small) {
+    footer {
+        .col:last-of-type {
+            flex: 1;
+        }
+    }
 }
